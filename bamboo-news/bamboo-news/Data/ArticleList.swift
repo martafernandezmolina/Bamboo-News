@@ -12,7 +12,7 @@ import UIKit
 
 struct ArticleList: Decodable {
   var status:String
-  var totalResult: Int
+  var totalResults: Int
   var articles: [Article]
 }
 

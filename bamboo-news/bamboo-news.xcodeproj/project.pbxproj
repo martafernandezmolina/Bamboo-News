@@ -13,10 +13,10 @@
 		96C049302562933700E02019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C0492E2562933700E02019 /* Main.storyboard */; };
 		96C049322562933A00E02019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C049312562933A00E02019 /* Assets.xcassets */; };
 		96C049352562933A00E02019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C049332562933A00E02019 /* LaunchScreen.storyboard */; };
-		96C049412562988100E02019 /* TableVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049402562988100E02019 /* TableVc.swift */; };
 		96C0494A25629A2600E02019 /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0494925629A2600E02019 /* ArticleList.swift */; };
 		96C0495025629BD200E02019 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0494F25629BD200E02019 /* Article.swift */; };
 		96C0495325629C6400E02019 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0495225629C6400E02019 /* Source.swift */; };
+		96C049562562B37900E02019 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049552562B37900E02019 /* EndPoints.swift */; };
 		A2B3C09E78BADB77917179E3 /* Pods_bamboo_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6029FD3E330F35D30C3ED18B /* Pods_bamboo_news.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,10 +32,10 @@
 		96C049312562933A00E02019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96C049342562933A00E02019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96C049362562933A00E02019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C049402562988100E02019 /* TableVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVc.swift; sourceTree = "<group>"; };
 		96C0494925629A2600E02019 /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
 		96C0494F25629BD200E02019 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		96C0495225629C6400E02019 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		96C049552562B37900E02019 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,6 @@
 				96C04946256299CD00E02019 /* Views */,
 				96C04948256299E400E02019 /* Data */,
 				96C0492E2562933700E02019 /* Main.storyboard */,
-				96C049402562988100E02019 /* TableVc.swift */,
-				96C04944256298E000E02019 /* endPoints */,
 				96C049312562933A00E02019 /* Assets.xcassets */,
 				96C049332562933A00E02019 /* LaunchScreen.storyboard */,
 				96C049362562933A00E02019 /* Info.plist */,
@@ -104,16 +102,10 @@
 			path = "bamboo-news";
 			sourceTree = "<group>";
 		};
-		96C04944256298E000E02019 /* endPoints */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = endPoints;
-			sourceTree = "<group>";
-		};
 		96C04945256299C700E02019 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				96C049552562B37900E02019 /* EndPoints.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -262,7 +254,7 @@
 				96C0495025629BD200E02019 /* Article.swift in Sources */,
 				96C0495325629C6400E02019 /* Source.swift in Sources */,
 				96C049292562933700E02019 /* AppDelegate.swift in Sources */,
-				96C049412562988100E02019 /* TableVc.swift in Sources */,
+				96C049562562B37900E02019 /* EndPoints.swift in Sources */,
 				96C0492B2562933700E02019 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
