@@ -15,5 +15,10 @@ enum EndPoints:String {
 }
 
 
-
+enum EndpointsParameters:String {
+  
+  case country, apiKey, description
+  case query = "q"
+  
+}
 

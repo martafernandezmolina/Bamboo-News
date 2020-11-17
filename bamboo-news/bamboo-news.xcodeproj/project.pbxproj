@@ -18,6 +18,9 @@
 		96C0495325629C6400E02019 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0495225629C6400E02019 /* Source.swift */; };
 		96C049562562B37900E02019 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049552562B37900E02019 /* EndPoints.swift */; };
 		96D5D7C12563CAB7004832CC /* NewsMager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D7C02563CAB7004832CC /* NewsMager.swift */; };
+		96D5D7C52563E272004832CC /* CountryIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D7C42563E272004832CC /* CountryIType.swift */; };
+		96D5D7C925640AA5004832CC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D7C825640AA5004832CC /* TableViewCell.swift */; };
+		96D5D7CC25640CCD004832CC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D7CB25640CCD004832CC /* TableViewController.swift */; };
 		A2B3C09E78BADB77917179E3 /* Pods_bamboo_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6029FD3E330F35D30C3ED18B /* Pods_bamboo_news.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		96C0495225629C6400E02019 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		96C049552562B37900E02019 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		96D5D7C02563CAB7004832CC /* NewsMager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMager.swift; sourceTree = "<group>"; };
+		96D5D7C42563E272004832CC /* CountryIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryIType.swift; sourceTree = "<group>"; };
+		96D5D7C825640AA5004832CC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		96D5D7CB25640CCD004832CC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 				96C04948256299E400E02019 /* Data */,
 				96C0492E2562933700E02019 /* Main.storyboard */,
 				96C049312562933A00E02019 /* Assets.xcassets */,
+				96C04947256299D800E02019 /* Managers */,
 				96C049332562933A00E02019 /* LaunchScreen.storyboard */,
 				96C049362562933A00E02019 /* Info.plist */,
 			);
@@ -109,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				96C049552562B37900E02019 /* EndPoints.swift */,
+				96D5D7C42563E272004832CC /* CountryIType.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -116,7 +124,8 @@
 		96C04946256299CD00E02019 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				96C04947256299D800E02019 /* Managers */,
+				96D5D7C825640AA5004832CC /* TableViewCell.swift */,
+				96D5D7CB25640CCD004832CC /* TableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,7 +134,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Managers;
+			name = Managers;
+			path = Views/Managers;
 			sourceTree = "<group>";
 		};
 		96C04948256299E400E02019 /* Data */ = {
@@ -263,7 +273,10 @@
 				96C0492D2562933700E02019 /* ViewController.swift in Sources */,
 				96C0494A25629A2600E02019 /* ArticleList.swift in Sources */,
 				96C0495025629BD200E02019 /* Article.swift in Sources */,
+				96D5D7C52563E272004832CC /* CountryIType.swift in Sources */,
 				96D5D7C12563CAB7004832CC /* NewsMager.swift in Sources */,
+				96D5D7C925640AA5004832CC /* TableViewCell.swift in Sources */,
+				96D5D7CC25640CCD004832CC /* TableViewController.swift in Sources */,
 				96C0495325629C6400E02019 /* Source.swift in Sources */,
 				96C049292562933700E02019 /* AppDelegate.swift in Sources */,
 				96C049562562B37900E02019 /* EndPoints.swift in Sources */,
