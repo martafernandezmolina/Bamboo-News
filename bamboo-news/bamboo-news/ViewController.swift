@@ -7,7 +7,7 @@
 
 import UIKit
 import Foundation
-import Alamofire
+
 
 
 
@@ -16,29 +16,27 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    fetchData()
+
+    let newsManager = NewsManager()
+    NewsManager.fetchdataHeadlines()
     
   }
-  
-  
   
   func fetchData(){
-    let parameters:[String:String] = ["country": "us", "apikey":"ad744c6e7c234011ad5decae4f173e16"]
-    var articleeList:String = ""
+    var emptyString = ""
+    let parameters:[String:String]  = ["country":"us", "apiKey":"ad744c6e7c234011ad5decae4f173e16"]
     AF.request(EndPoints.topHeadLines.url, parameters: parameters).validate().responseDecodable(of: ArticleList.self){
       (response) in
-      guard let articleList:ArticleList = response.value else {
-        print(String(describing: response.error))
-        return }
-      print(articleList.totalResults)
-      print(articleList.articles)
-      for articles in articleList.articles{
-        articleeList.append("el articulo es \(articles.title) \n\n ")
+      // codigo ejecutable: lo que devuelve el bloque de la request.
+      guard let articleList:ArticleList = response.value else {return}
+      //  print (articleList.totalResults)
+      for elements in articleList.articles {
+        emptyString.append("el titulo del artículo es \(elements.title) \n\n" )
+        print(emptyString)
       }
+      
     }
   }
+ 
   
 }
-
-

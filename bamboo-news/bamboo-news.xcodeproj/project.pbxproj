@@ -17,6 +17,7 @@
 		96C0495025629BD200E02019 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0494F25629BD200E02019 /* Article.swift */; };
 		96C0495325629C6400E02019 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0495225629C6400E02019 /* Source.swift */; };
 		96C049562562B37900E02019 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049552562B37900E02019 /* EndPoints.swift */; };
+		96D5D7C12563CAB7004832CC /* NewsMager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D7C02563CAB7004832CC /* NewsMager.swift */; };
 		A2B3C09E78BADB77917179E3 /* Pods_bamboo_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6029FD3E330F35D30C3ED18B /* Pods_bamboo_news.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		96C0494F25629BD200E02019 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		96C0495225629C6400E02019 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		96C049552562B37900E02019 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		96D5D7C02563CAB7004832CC /* NewsMager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				96C049282562933700E02019 /* AppDelegate.swift */,
 				96C0492A2562933700E02019 /* SceneDelegate.swift */,
 				96C0492C2562933700E02019 /* ViewController.swift */,
+				96D5D7BF2563CA96004832CC /* Managers */,
 				96C04945256299C700E02019 /* common */,
 				96C04946256299CD00E02019 /* Views */,
 				96C04948256299E400E02019 /* Data */,
@@ -133,6 +136,14 @@
 				96C0495225629C6400E02019 /* Source.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		96D5D7BF2563CA96004832CC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				96D5D7C02563CAB7004832CC /* NewsMager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 				96C0492D2562933700E02019 /* ViewController.swift in Sources */,
 				96C0494A25629A2600E02019 /* ArticleList.swift in Sources */,
 				96C0495025629BD200E02019 /* Article.swift in Sources */,
+				96D5D7C12563CAB7004832CC /* NewsMager.swift in Sources */,
 				96C0495325629C6400E02019 /* Source.swift in Sources */,
 				96C049292562933700E02019 /* AppDelegate.swift in Sources */,
 				96C049562562B37900E02019 /* EndPoints.swift in Sources */,
