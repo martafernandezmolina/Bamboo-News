@@ -44,6 +44,7 @@ struct NewsManager {
     AF.request(EndPoints.eveything.rawValue, parameters: parameters).validate().responseDecodable(of: ArticleList.self){
       (response) in
       guard let articleList2:ArticleList = response.value else {
+        print ("ddsdddd")
       return}
       for elements in articleList2.articles {
         emptystring3.append("La descripción del del articulo \(elements.description)")

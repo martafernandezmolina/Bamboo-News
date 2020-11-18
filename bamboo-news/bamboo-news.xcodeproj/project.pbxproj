@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964AFA412565656200F77881 /* SegueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA402565656200F77881 /* SegueView.swift */; };
+		964AFA44256567B000F77881 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA43256567B000F77881 /* NewsViewModel.swift */; };
 		96C049292562933700E02019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049282562933700E02019 /* AppDelegate.swift */; };
 		96C0492B2562933700E02019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0492A2562933700E02019 /* SceneDelegate.swift */; };
 		96C0492D2562933700E02019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0492C2562933700E02019 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		47D503BFB62326CC443FF081 /* Pods-bamboo-news.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo-news.release.xcconfig"; path = "Target Support Files/Pods-bamboo-news/Pods-bamboo-news.release.xcconfig"; sourceTree = "<group>"; };
 		4FD2B375A8B2A3A73921793C /* Pods-bamboo-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo-news.debug.xcconfig"; path = "Target Support Files/Pods-bamboo-news/Pods-bamboo-news.debug.xcconfig"; sourceTree = "<group>"; };
 		6029FD3E330F35D30C3ED18B /* Pods_bamboo_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboo_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		964AFA402565656200F77881 /* SegueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueView.swift; sourceTree = "<group>"; };
+		964AFA43256567B000F77881 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		96C049252562933700E02019 /* bamboo-news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bamboo-news.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C049282562933700E02019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C0492A2562933700E02019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			children = (
 				96C049552562B37900E02019 /* EndPoints.swift */,
 				96D5D7C42563E272004832CC /* CountryIType.swift */,
+				964AFA43256567B000F77881 /* NewsViewModel.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			children = (
 				96D5D7C825640AA5004832CC /* TableViewCell.swift */,
 				96D5D7CB25640CCD004832CC /* TableViewController.swift */,
+				964AFA402565656200F77881 /* SegueView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 				96C0495325629C6400E02019 /* Source.swift in Sources */,
 				96C049292562933700E02019 /* AppDelegate.swift in Sources */,
 				96C049562562B37900E02019 /* EndPoints.swift in Sources */,
+				964AFA44256567B000F77881 /* NewsViewModel.swift in Sources */,
+				964AFA412565656200F77881 /* SegueView.swift in Sources */,
 				96C0492B2562933700E02019 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
