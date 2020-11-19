@@ -12,10 +12,11 @@ class TableViewController: UITableViewController {
   let newsManager = NewsManager()
   var articles : [Article]?
   
+  
   @IBOutlet var tableview: UITableView!
   override func viewDidLoad() {
     super.viewDidLoad()
-   
+   // self.tableView(<#T##tableView: UITableView##UITableView#>, viewForHeaderInSection: <#T##Int#>)
     
     //        newsManager.fetchdataHeadlines(countryID: CountryType.unitedKingdom, // tmb .unitedKingdo
     //                                       success:{(news) in
