@@ -102,26 +102,32 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="1be-3z-X16">
                                         <rect key="frame" x="0.0" y="117.5" width="414" height="189"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZQx-go-KrK">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ZQx-go-KrK">
                                         <rect key="frame" x="0.0" y="403.5" width="414" height="295.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="295.5" id="Eyf-VN-O3l"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-Zq-PnI">
-                                <rect key="frame" x="0.0" y="88" width="74.5" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-Zq-PnI">
+                                <rect key="frame" x="20" y="88" width="374" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="ZuL-77-g5J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Titulo">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdP-vj-FPC">
@@ -131,6 +137,9 @@
                                     <constraint firstAttribute="width" constant="50" id="JUp-Ob-EW0"/>
                                 </constraints>
                                 <state key="normal" image="safari.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="segueSafariButton:" destination="JgQ-Jv-gpH" eventType="touchUpInside" id="stM-Pe-tlu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2aV-8E-qEZ"/>
@@ -139,9 +148,10 @@
                             <constraint firstItem="zLr-Tp-2hF" firstAttribute="leading" secondItem="2aV-8E-qEZ" secondAttribute="leading" id="1Jh-gV-BCX"/>
                             <constraint firstItem="zLr-Tp-2hF" firstAttribute="trailing" secondItem="2aV-8E-qEZ" secondAttribute="trailing" id="3O3-nm-q3t"/>
                             <constraint firstItem="zLr-Tp-2hF" firstAttribute="top" secondItem="GZA-Zq-PnI" secondAttribute="bottom" id="B22-Ie-4fZ"/>
-                            <constraint firstItem="GZA-Zq-PnI" firstAttribute="leading" secondItem="2aV-8E-qEZ" secondAttribute="leading" id="J6H-l2-TaJ"/>
+                            <constraint firstItem="GZA-Zq-PnI" firstAttribute="leading" secondItem="2aV-8E-qEZ" secondAttribute="leading" constant="20" id="J6H-l2-TaJ"/>
                             <constraint firstItem="zLr-Tp-2hF" firstAttribute="top" secondItem="GZA-Zq-PnI" secondAttribute="bottom" id="QUa-mg-rn6"/>
                             <constraint firstItem="2aV-8E-qEZ" firstAttribute="bottom" secondItem="zLr-Tp-2hF" secondAttribute="bottom" id="Sbw-66-rbH"/>
+                            <constraint firstItem="2aV-8E-qEZ" firstAttribute="trailing" secondItem="GZA-Zq-PnI" secondAttribute="trailing" constant="20" id="UsE-PP-n77"/>
                             <constraint firstItem="pdP-vj-FPC" firstAttribute="trailing" secondItem="2aV-8E-qEZ" secondAttribute="trailing" constant="-24" id="fAP-Z2-Q59"/>
                             <constraint firstItem="zLr-Tp-2hF" firstAttribute="leading" secondItem="2aV-8E-qEZ" secondAttribute="leading" id="m4U-WG-Yjq"/>
                             <constraint firstItem="2aV-8E-qEZ" firstAttribute="bottom" secondItem="pdP-vj-FPC" secondAttribute="bottom" id="ne5-tp-iJP"/>

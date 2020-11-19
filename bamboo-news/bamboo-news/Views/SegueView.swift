@@ -18,6 +18,17 @@ class SegueViewController: UIViewController{
   @IBOutlet weak var segueDate: UILabel!
   @IBOutlet weak var segueAuthor: UILabel!
   @IBOutlet weak var segueTextView: UITextView!
+  @IBAction func segueSafariButton(_ sender: Any) {
+    guard let article: Article = NewsViewModel.selectecArticle,
+    let safariUrl = URL(string: article.url ?? "" ) else { return }
+    UIApplication.shared.open(safariUrl)
+      
+    }
+
+
+
+ 
+  
   override func viewDidLoad() {
     guard let article:Article = NewsViewModel.selectecArticle else {return}
     //self.title = NewsViewModel.selectecArticle?.title
@@ -28,8 +39,12 @@ class SegueViewController: UIViewController{
     segueAuthor.text = article.author
     if let segueToimage = article.urlToImage, let myImage = URL(string: segueToimage){
       segueImageView.af.setImage(withURL: myImage)
-    }
+   
+  }
 
+    
+     
+      }
         //segueImageView.image = article.af.setImage(withURl)
    // ImageCell.af.setImage(withURL: urlImage)
   //  segueLabelText.text = NewsViewModel.selectecArticle?.title
@@ -40,7 +55,7 @@ class SegueViewController: UIViewController{
     //segeImageView.image = NewsViewModel.selectecArticle?.urlToImage
    // segueLabelText.text = article[IndexPath.row].title
     
-  }
+
   
 
 
