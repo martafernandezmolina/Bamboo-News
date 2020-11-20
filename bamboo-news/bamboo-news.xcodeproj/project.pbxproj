@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		964AFA412565656200F77881 /* SegueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA402565656200F77881 /* SegueView.swift */; };
 		964AFA44256567B000F77881 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA43256567B000F77881 /* NewsViewModel.swift */; };
+		964AFA4D2567C23600F77881 /* fullSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA4C2567C23600F77881 /* fullSource.swift */; };
+		964AFA512567C48A00F77881 /* sourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFA502567C48A00F77881 /* sourceList.swift */; };
 		96C049292562933700E02019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C049282562933700E02019 /* AppDelegate.swift */; };
 		96C0492B2562933700E02019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0492A2562933700E02019 /* SceneDelegate.swift */; };
 		96C0492D2562933700E02019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0492C2562933700E02019 /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		6029FD3E330F35D30C3ED18B /* Pods_bamboo_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboo_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		964AFA402565656200F77881 /* SegueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueView.swift; sourceTree = "<group>"; };
 		964AFA43256567B000F77881 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		964AFA4C2567C23600F77881 /* fullSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fullSource.swift; sourceTree = "<group>"; };
+		964AFA502567C48A00F77881 /* sourceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sourceList.swift; sourceTree = "<group>"; };
 		96C049252562933700E02019 /* bamboo-news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bamboo-news.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C049282562933700E02019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C0492A2562933700E02019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				96C0494925629A2600E02019 /* ArticleList.swift */,
 				96C0494F25629BD200E02019 /* Article.swift */,
 				96C0495225629C6400E02019 /* Source.swift */,
+				964AFA502567C48A00F77881 /* sourceList.swift */,
+				964AFA4C2567C23600F77881 /* fullSource.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -282,11 +288,13 @@
 				96D5D7C52563E272004832CC /* CountryIType.swift in Sources */,
 				96D5D7C12563CAB7004832CC /* NewsMager.swift in Sources */,
 				96D5D7C925640AA5004832CC /* TableViewCell.swift in Sources */,
+				964AFA4D2567C23600F77881 /* fullSource.swift in Sources */,
 				96D5D7CC25640CCD004832CC /* TableViewController.swift in Sources */,
 				96C0495325629C6400E02019 /* Source.swift in Sources */,
 				96C049292562933700E02019 /* AppDelegate.swift in Sources */,
 				96C049562562B37900E02019 /* EndPoints.swift in Sources */,
 				964AFA44256567B000F77881 /* NewsViewModel.swift in Sources */,
+				964AFA512567C48A00F77881 /* sourceList.swift in Sources */,
 				964AFA412565656200F77881 /* SegueView.swift in Sources */,
 				96C0492B2562933700E02019 /* SceneDelegate.swift in Sources */,
 			);

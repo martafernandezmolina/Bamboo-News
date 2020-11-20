@@ -26,16 +26,13 @@ class SegueViewController: UIViewController{
     }
 
 
-
- 
-  
   override func viewDidLoad() {
     guard let article:Article = NewsViewModel.selectecArticle else {return}
     //self.title = NewsViewModel.selectecArticle?.title
     self.title =  article.description
     segueLabelText.text = article.title
     segueTextView.text = article.content
-    segueDate.text = article.publishedAt
+    segueDate.text = article.publishedAtFormatted
     segueAuthor.text = article.author
     if let segueToimage = article.urlToImage, let myImage = URL(string: segueToimage){
       segueImageView.af.setImage(withURL: myImage)

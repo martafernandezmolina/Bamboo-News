@@ -55,5 +55,36 @@ struct NewsManager {
     
   }
   
+  func fechSource(success: @escaping(SourceList)-> ()) {
+    var stringVacio  = ""
+    let parameters: [String:String]  = [EndpointsParameters.apiKey.rawValue: apiKeyValue]
+    AF.request(EndPoints.fullSource.url, parameters: parameters).validate().responseDecodable(of:SourceList.self){(responde) in
+      
+      guard let newSourceList:SourceList = responde.value else {
+       print("estoy en fechSource")
+      return}
+      for elements in newSourceList.sources{
+        stringVacio.append("La descripción del del articulo \(elements.description)")
+        
+      }
+      
+      print(stringVacio)
+      success(newSourceList)
+
+    }
+    
+     }
+    
+
   
-}
+  
+
+//EndpointsParameters.apiKey.rawValue: apiKeyValue ]
+//
+//AF.request(EndPoints.eveything.rawValue, parameters: parameters).validate().responseDecodable(of: ArticleList.self){
+// (response) in
+// guard let articleList2:ArticleList = response.value else {
+//   print ("ddsdddd")
+// return}
+// for elements in articleList2.articles {
+//   emptystring3.append("La descripción del del articulo \(elements.description)")

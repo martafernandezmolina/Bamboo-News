@@ -11,6 +11,7 @@ enum EndPoints:String {
   
   case topHeadLines = "https://newsapi.org/v2/top-headlines"
   case eveything = "https://newsapi.org/v2/everything"
+  case fullSource = "https://newsapi.org/v2/sources"
   
   
    var url: String {self.rawValue }
