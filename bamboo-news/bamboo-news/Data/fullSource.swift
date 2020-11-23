@@ -10,7 +10,7 @@ import Foundation
 struct fullSource:Decodable {
   let description :String
   let url:String
-  let Category: String
+  let category: String
   let language:String
   let country: String
 }

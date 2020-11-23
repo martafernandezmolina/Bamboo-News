@@ -8,6 +8,7 @@
 import UIKit
 import AlamofireImage
 
+
 class TableViewController: UITableViewController {
   let newsManager = NewsManager()
   var articles : [Article]? = []
@@ -22,7 +23,8 @@ class TableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     fetchdataHeadlines ()
-    
+    fetchSource()
+    fetchMovies()
 
   }
 
@@ -86,27 +88,31 @@ func fetchdataHeadlines (){
   
   
   func fetchSource(){
-    
-    
-    
-    newsManager.fechSource(success: {(news)in
-    //  self.source = news.sources
-      
-      
+    newsManager.fechSource(success:{(source)in
+     // self.tableView.reloadData()
+      print("##### ##### ##### #### ### este bloque me devuelve \(source)")
     })
      
         
         
-        
-      })
+      }
     
     
+  func fetchMovies(){
+   
+    newsManager.fetchMovies(success:{(movies)in
+      // self.tableView.reloadData()
+       print("##### ##### ##### #### ### este bloque me devuelve movies :DDDDD \(movies) \n\n ")
+     })
+      
     
+    
+  }
     
   }
   
   
-}
+
 
 extension TableViewController :UITextFieldDelegate {
   
@@ -118,5 +124,6 @@ extension TableViewController :UITextFieldDelegate {
     return true
   }
 }
+
 
 
