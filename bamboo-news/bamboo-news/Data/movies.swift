@@ -21,3 +21,7 @@ struct Movie: Decodable {
   }
 
 }
+
+func sadas () -> Double {
+  return 7.8
+}
