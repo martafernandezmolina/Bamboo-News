@@ -86,7 +86,7 @@ func fetchdataHeadlines (){
                                   print(news.articles.first?.title)})
 }
   
-  
+    
   func fetchSource(){
     newsManager.fechSource(success:{(source)in
      // self.tableView.reloadData()
